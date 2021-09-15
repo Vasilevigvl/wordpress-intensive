@@ -1,0 +1,381 @@
+/* Основные стили */
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul li   {
+    list-style: none;
+}
+
+ul  {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
+    font-weight: normal;
+}
+
+a   {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* img {
+    display: block;
+    max-width: 100%;
+} */
+
+body    {
+    background-color: #fff;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.42;
+}
+
+/* Стилизация первой секции */
+
+.hero   {
+    background: url('./../img/bg/main_bg.png') center center / cover no-repeat;
+    color: #fff;
+}
+
+.container  {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero__container    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 50px;
+}
+
+.promo__maintitle   {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41px;
+    color: #F9BF3B;
+}
+
+.promo__subtitle    {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 1.08;
+}
+
+.promo p   {
+    margin-bottom: 60px;
+}
+
+.text--yel--up  {
+    text-transform: uppercase;
+    color: #F9BF3B;
+}
+
+.btn    {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 23px 14px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0 0 25px rgb(223 181 109 / 15%);
+}
+
+.promo__btn     {
+    margin-bottom: 70px;
+}
+
+
+.promo__about   {
+    margin-bottom: 84px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.promo__about::after    {
+    content: url(./../img/pic/down.png);
+    position: absolute;
+    top: 150%;
+    left: 48%;
+    cursor: pointer;
+}
+
+/* Стилизация второй секции */
+
+.instore    {
+    background-color: #EFEFEF;
+}
+
+
+.instore__container    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.head   {
+    padding: 88px 0 0 0;
+    margin-bottom: 40px;
+}
+
+.head__title    {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.head p {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.content__list  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.content__item  {
+    max-width: 370px;
+    padding: 0 auto;
+    margin-right: 45px;
+}
+
+.content__img   {
+    padding-bottom: 25px;
+}
+
+.content__item:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.content__item p    {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    
+}
+
+/* Стилизация третьей секции */
+
+.opt    {
+    background: url('./../img/bg/woman_bg.png') center left no-repeat ;
+    
+}
+
+
+
+.text   {
+    text-align: left;
+    padding-top: 105px;
+    max-width: 750px;
+    margin-left: auto;
+    padding-bottom: 70px;
+}
+
+
+
+.text__title    {
+    text-transform: uppercase;
+    color: #299CBD;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.text__content  {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.text__content p    {
+    padding-bottom: 12px;
+}
+
+
+.text--bold {
+    font-weight: bold;
+}
+
+.text--bold p   {
+    padding-bottom: 0px;
+}
+
+/* Стилизация четвёртой секции */
+
+.separator  {
+    background: url('./../img/bg/second_bg.png') center center / cover no-repeat;
+}
+
+.separator__title   {
+    text-align: center;
+    color: #EFEFEF;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 85px;
+    margin-bottom: 58px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__item   {
+    text-align: center;
+    max-width: 200px;
+    color: #fff;
+    margin-bottom: 90px;
+}
+
+.skills__wrap   {
+    margin: 0 auto;
+    max-width: 110px;
+    background: #B4E2FF;
+    border-radius: 100px;
+}
+
+.skills__img    {
+    padding: 20px 10px;
+}
+
+.skills__item p  {
+    color: #EFEFEF;
+    font-weight: 300;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+/* Стилизация пятой секции */
+
+.gifts  {
+    background-color: #EFEFEF;
+}
+
+.gifts__container   {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift    {
+    padding-top: 85px;
+    margin-bottom: 45px;
+}
+
+.gift__text {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.gift__text p   {
+    padding: 5px;
+
+}
+
+.gift__btn  {
+    color: #fff;
+    margin-bottom: 85px;
+}
+
+/* Стилизация шестой секции */
+
+.webinar__container {
+    
+    text-align: center;
+}
+
+.webinar__img   {
+    padding-top: 90px;
+    margin-bottom: 35px;
+}
+
+.webinar__title {
+    text-transform: uppercase;
+    color: #252525;
+    font-size: 30px;
+}
+
+.webinar__content   {
+    padding-top: 20px;
+    color: #252525;
+    font-size: 23px;
+    padding-bottom: 215px;
+}
+
+.text--bold--blue   {
+    color: #299CBD;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* Стилизация футтера */
+
+.footer {
+    background-color: #1A1A1A;
+    color: #888888;
+}
+
+.footer__container  {
+    text-align: center;
+    padding-top: 57px;
+    padding-bottom: 70px;
+}
+
+.footer__container a    {
+    text-decoration: underline;
+    /* margin-right: 20px; */
+}
+
+.footer__container:nth-child(2) {
+    margin-right: 0px;
+}
+
+.tech__link::after {
+    content: '|';
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}

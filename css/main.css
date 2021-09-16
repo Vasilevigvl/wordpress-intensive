@@ -51,6 +51,7 @@ body    {
 }
 
 .container  {
+    width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -173,14 +174,36 @@ body    {
     margin-bottom: 75px;
 }
 
+@media screen and (max-width: 768px)    {
+    .content__list  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
 .content__item  {
     max-width: 370px;
     padding: 0 auto;
     margin-right: 45px;
 }
 
+@media screen and (max-width: 768px)    {
+    .content__item  {
+        margin-right: 0;
+        padding-bottom: 10px;
+    }
+}
+
 .content__img   {
     padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px)    {
+    .content__img   {
+        padding-bottom: 15px;
+    }
 }
 
 .content__item:nth-last-child(1) {
@@ -201,6 +224,12 @@ body    {
     
 }
 
+
+@media screen and (max-width: 768px)    {
+    .opt    {
+        background: #fff;
+    }
+}
 
 
 .text   {
@@ -259,14 +288,25 @@ body    {
 .skills {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+@media screen and (max-width: 768px)    {
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .skills__item   {
     text-align: center;
     max-width: 200px;
     color: #fff;
-    margin-bottom: 90px;
+    
 }
+
+
 
 .skills__wrap   {
     margin: 0 auto;
@@ -284,6 +324,13 @@ body    {
     font-weight: 300;
     font-size: 17px;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px)    {
+    .skills__item p {
+        padding-bottom: 10px;
+        padding-top: 13px;
+    }
 }
 
 /* Стилизация пятой секции */
@@ -323,7 +370,6 @@ body    {
 /* Стилизация шестой секции */
 
 .webinar__container {
-    
     text-align: center;
 }
 
